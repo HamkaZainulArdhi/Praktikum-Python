@@ -1,0 +1,14 @@
+Declare nilai_tugas, Nilai_uts, Nilai_uas, nilai_akhir AS number
+
+BEGIN
+  input nilai_tugas
+  input Nilai_uts
+  Input nilai_uas
+
+  set nilai_akhir = (30% * Nilai_tugas) + (30% * Nilai_uts) + (40% * nilai_uas)
+
+  print nilai_akhir
+
+END
+
+  

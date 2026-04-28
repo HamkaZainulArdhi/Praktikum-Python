@@ -1,0 +1,19 @@
+Declare gaji_pokok, tunjangan_transport, jam_lembur, tarif_lembur As number
+Declare uang_lembur, gaji_kotor, gaji_bersih As number
+
+BEGIN
+  Input gaji_pokok
+  Input tunjangan_transport
+  Input jam_lembur
+  Input tarif_lembur
+
+  Set uang_lembur = jam_lembur * tarif_lembur
+  Set gaji_kotor = gaji_pokok + tunjangan_transport + uang_lembur
+
+  Set pajak = 5% * gaji_kotor
+  Set gaji_bersih = gaji_kotor - pajak
+
+  Print gaji_kotor
+  Print pajak
+  Print gaji_bersih
+END
